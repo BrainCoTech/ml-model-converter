@@ -13,7 +13,7 @@ class Product(IntEnum):
     stark = 1
     emg_plus = 2
 
-product = Product.Crimson
+product = Product.crimson
 
 print(sys.argv[0])
 if len(sys.argv) != 4:
@@ -29,9 +29,9 @@ output_file = sys.argv[3]
 input_shape = None
 if product == Product.crimson:
     input_shape = (1,1,1250)
-else if product == Product.stark:
+elif product == Product.stark:
     input_shape = (1,1,100,12)
-else if product == Product.emg_plug
+elif product == Product.emg_plug:
     input_shape = (1,1,100,12)
 
 # https://mxnet.cdn.apache.org/versions/1.7.0/api/python/docs/tutorials/deploy/export/onnx.htmlhttps://mxnet.cdn.apache.org/versions/1.7.0/api/python/docs/tutorials/deploy/export/onnx.html
