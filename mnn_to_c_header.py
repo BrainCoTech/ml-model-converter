@@ -18,7 +18,7 @@ header_name = "MNN_MODEL.h"
 
 # Transpile any binary data to native C char array.
 def data_to_char_array(data, array_var_name):
-    output = "static const char " + array_var_name +  "[]={"
+    output = "static const unsigned char " + array_var_name +  "[]={"
     data_str = ','.join(str(byte) for byte in data)
     output = output + data_str + "};"
     return output
