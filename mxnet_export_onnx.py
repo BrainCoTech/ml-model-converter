@@ -31,7 +31,7 @@ if product == Product.crimson:
     input_shape = (1,1,1250)
 elif product == Product.stark:
     input_shape = (1,1,100,12)
-elif product == Product.emg_plug:
+elif product == Product.emg_plus:
     input_shape = (1,1,100,12)
 
 # https://mxnet.cdn.apache.org/versions/1.7.0/api/python/docs/tutorials/deploy/export/onnx.htmlhttps://mxnet.cdn.apache.org/versions/1.7.0/api/python/docs/tutorials/deploy/export/onnx.html
