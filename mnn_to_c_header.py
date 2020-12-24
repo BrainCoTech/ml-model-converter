@@ -10,7 +10,7 @@ from enum import IntEnum  # Enum declarations
 
 print(sys.argv[0])
 if len(sys.argv) < 2 or len(sys.argv) > 4:
-    print("USAGE:python mnn_to_c_header.py [MODEL_FILE] [OUTPUT_HEADER_NAME(Optional)(Optional)] [VAR_NAME(Optional)]")
+    print("USAGE:python mnn_to_c_header.py [MODEL_FILE] [OUTPUT_HEADER_NAME(Optional)] [VAR_NAME(Optional)]")
     exit(0)
 
 var_name = "MODEL"
@@ -33,5 +33,5 @@ model_file_name = sys.argv[1]
 with open(model_file_name, mode='rb') as file: # b is important -> binary
     model = file.read()
     header_content = data_to_char_array(model, var_name)
-    with open(header_name, 'a') as out:
+    with open(header_name, 'w') as out:
         out.write(header_content)
