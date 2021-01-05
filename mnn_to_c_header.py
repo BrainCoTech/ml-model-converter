@@ -4,7 +4,6 @@ import sys
 
 import mxnet as mx
 import numpy as np
-from mxnet.contrib import onnx as onnx_mxnet
 
 from enum import IntEnum  # Enum declarations
 
