@@ -1,4 +1,4 @@
-
+import sys
 import tensorflow as tf
 
 if len(sys.argv) is not 3:
