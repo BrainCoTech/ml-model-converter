@@ -25,3 +25,10 @@ NOTE: Make sure you have python3 installed, if python3 is unavailable from sys e
 ```
 ./convert_onnx_model.sh [INPUT MODEL FILE] [OUTPUT_FILE]
 ```
+
+# Converting TF2 to lite and C header.
+```
+python3 tf2_to_tflite.py [DIR_NAME] [TFLITE_NAME].tflite
+python3 mnn_to_c_header.py [TFLITE_NAME].tflite [TFLITE_HEADER].h STARK_MODEL
+```
+
