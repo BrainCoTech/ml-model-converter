@@ -4,7 +4,7 @@ import numpy as np
 
 _ENABLE_QUANTIZATION = True
 
-if len(sys.argv) is not 3:
+if len(sys.argv) != 3:
     print("USAGE:python tf2_to_tflite.py [SAVED_MODEL_DIR] [OUTPUT_MODEL_NAME]")
     exit(0)
 
